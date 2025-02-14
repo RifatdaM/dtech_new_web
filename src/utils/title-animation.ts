@@ -430,7 +430,7 @@ function zoomAnimation() {
         duration: 1.5,
         autoAlpha: 0,
         scale: 1.4,
-        ease: Power2.easeOut,
+        // ease: Power2.easeOut,
         clearProps: "all",
       });
     });

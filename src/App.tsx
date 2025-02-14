@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Suspense, useState, useEffect } from "react";
+import { Suspense } from "react";
 import Home from "./pages/Home.page";
 import Loading from "./pages/Loading.page";
 import './globals.scss';

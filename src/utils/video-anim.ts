@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import $ from 'jquery';
-import {ScrollTrigger} from '@/plugins';
+// import {ScrollTrigger} from '@/plugins';
 
 function videoAnimOne() {
 	if ($('.tp-hero-bottom-img-wrap').length > 0) {

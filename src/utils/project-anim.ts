@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import $ from "jquery";
-import { ScrollTrigger } from '@/plugins';
+import { ScrollTrigger } from '../plugins';
 
 function projectThreeAnimation() {
   if (document.querySelectorAll(".tp-project-3-area").length > 0) {

@@ -10,7 +10,7 @@ import { ScrollSmoother, ScrollTrigger, SplitText, cursorAnimation } from "../pl
 import useScrollSmooth from "../hooks/use-scroll-smooth"
 
 // animations
-import { bounceAnimation, fadeAnimation, revelAnimationOne, revelAnimationTwo } from "../utils/title-animation"
+import { bounceAnimation, fadeAnimation, revelAnimationOne } from "../utils/title-animation"
 
 // components
 import Wrapper from "../layouts/wrapper"
@@ -23,7 +23,7 @@ import BrandTwo from "../components/brand/brand-two";
 import AboutOne from "../components/about/about-one";
 import WhyDtech from "../components/cards/why-dtech";
 import DtechServices from "../components/services/dtech-service";
-import FooterTwo from "../layouts/footer/footer-two";
+// import FooterTwo from "../layouts/footer/footer-two";
 import FooterFour from "../layouts/footer/footer-four";
 import ContactOne from "../components/contact/contact-one";
 import { ctaAnimation } from "../utils/cta-anim";

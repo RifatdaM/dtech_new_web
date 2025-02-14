@@ -1,4 +1,4 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import product_data from "@/data/product-data";
 
 // Get max price
