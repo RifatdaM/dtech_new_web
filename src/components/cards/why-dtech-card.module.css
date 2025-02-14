@@ -1,0 +1,75 @@
+.card {
+  border: 0.5px solid rgba(209, 213, 219);
+  position: relative;
+  width: 100%;
+  /* max-width: 400px; */
+  aspect-ratio: 21 / 13;
+  overflow: hidden;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  cursor: pointer;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 100%;
+    aspect-ratio:21/15
+  }
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--background-color);
+}
+
+.textContent {
+  position: relative;
+  z-index: 1;
+}
+
+.firstLetter {
+  /* position: absolute; */
+  /* top: -100px; */
+  /* left: -10px; */
+  font-size: 180px;
+  font-weight: bold;
+  background-image: var(--background-image);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  /* margin-bottom: 24px; */
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  /* margin-top:1.5rem */
+  margin-left:
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Global styles */
+:global(.animated-card-font) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

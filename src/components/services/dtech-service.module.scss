@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+  position: relative; // Add this
+}
+
+// Add this new class
+.parallaxBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh; // Slightly taller than container
+  background: linear-gradient(45deg, #f3f3f3 0%, #ffffff 100%);
+  z-index: 1;
+  background-image: url("../../assets/img/dtech/bg2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; // Add this to ensure content stays above background
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.menuButton {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerpiece {
+    position: absolute;
+    padding: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    width: 200px;  // Make it slightly larger than services
+    height: 200px;
+    border-radius: 50%;  // Make it circular
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        width: 70%;  // Adjust logo size to fit nicely in the circle
+        height: auto;
+    }
+}
+
+.service {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: lowercase;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  // background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1); // Changed to dark color with slight transparency
+  transition: background 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}

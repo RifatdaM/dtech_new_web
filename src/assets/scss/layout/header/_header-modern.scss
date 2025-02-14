@@ -1,0 +1,115 @@
+.modern-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  
+    &.sticky {
+      background: #ffffff;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+      transform: translateY(0);
+      animation: slideDown 0.5s ease-in-out;
+    }
+  
+    .container {
+      max-width: 1740px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+  
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .logo-wrapper {
+      .logo {
+        img {
+          height: 40px;
+          width: auto;
+        }
+      }
+    }
+  
+    .main-nav {
+      ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: #007bff;
+            }
+          }
+        }
+      }
+    }
+  
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      .book-call-btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background: #0056b3;
+        }
+      }
+  
+      .theme-toggle {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .moon-icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  // Media queries for responsiveness
+  @media (max-width: 1024px) {
+    .modern-header {
+      .main-nav {
+        display: none; // You might want to implement a mobile menu
+      }
+    }
+  }

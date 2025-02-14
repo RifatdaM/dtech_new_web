@@ -1,0 +1,27 @@
+// Import vendor styles
+@forward '../css/animate.css';
+@forward '../css/custom-animation.css';
+@forward '../css/font-awesome-pro.css';
+
+// Import theme configurations
+@forward 'theme';
+
+// Import components
+@forward 'components';
+
+// Import layouts
+@forward 'layout';
+
+// Global styles
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
