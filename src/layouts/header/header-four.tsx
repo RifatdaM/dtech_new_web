@@ -10,6 +10,7 @@ import useSticky from "../../hooks/use-sticky";
 import MobileOffcanvasTwo from "../../components/offcanvas/mobile-offcanvas-2";
 
 export default function HeaderFour() {
+  // @ts-ignore
   const { sticky, headerRef, headerFullWidth, adjustMenuBackground } = useSticky();
   // const [openCartMini, setOpenCartMini] = React.useState(false);
   const [openOffCanvas, setOpenOffcanvas] = React.useState(false);

@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import $ from "jquery";
+// @ts-ignore
 import { ScrollTrigger } from '../plugins';
 
 function projectThreeAnimation() {

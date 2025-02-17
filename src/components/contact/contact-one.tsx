@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { ProjectShape, RightArrow } from "../svg";
 import cta from '../../assets/img/home-03/cta/cta-1.png';

@@ -44,10 +44,12 @@ function hoverBtn() {
         ease: Power2.easeOut,
       });
     }
+    // @ts-ignore
     $(btn).mouseleave(function (e) {
       gsap.to(hoverBtnItem[i], 1, {
         x: 0,
         y: 0,
+        // @ts-ignore
         ease: Power2.easeOut,
       });
     });

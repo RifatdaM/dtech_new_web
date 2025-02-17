@@ -1,11 +1,9 @@
-'use client';
-import React from "react";
-import Image from "next/image";
+
 import { SwiperOptions } from "swiper/types";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
-import CounterTwo from "../counter/counter-two";
+
 import { NextArrow, PrevArrow } from "../svg";
 import shape from "@/assets/img/home-08/testimonial/test-1.png";
 import logo from "@/assets/img/home-08/testimonial/test-logo-1.png";
@@ -49,24 +47,24 @@ const testimonial_data = [
 type IProps = {
   style_2?: boolean;
 }
-export default function StudioPanelFour({style_2=false}: IProps) {
+export default function StudioPanelFour({ style_2 = false }: IProps) {
   return (
-    <div className={`${style_2?'':'panel-2 tp-studio-height'}`}>
-      <div className={`tp-studio-testimonial-area tp-studio-plr black-bg p-relative fix tp-studio-testimonial-xs-space ${style_2?'tm-testimonial-height':'tp-studio-height'}`}>
+    <div className={`${style_2 ? '' : 'panel-2 tp-studio-height'}`}>
+      <div className={`tp-studio-testimonial-area tp-studio-plr black-bg p-relative fix tp-studio-testimonial-xs-space ${style_2 ? 'tm-testimonial-height' : 'tp-studio-height'}`}>
         <div className="tp-studio-testimonial-title-box d-none d-md-block">
           <h4 className="tp-studio-testimonial-title">What Our Clients Say</h4>
         </div>
         <div className="container container-1330">
           <div className="tp-studio-funfact-wrap">
             {/* counter area */}
-            <CounterTwo />
+            {/* <CounterTwo /> */}
             {/* counter area */}
           </div>
           <div className="tp-studio-testimonial-wrap pt-120">
             <div className="row align-items-start">
               <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                 <div className="tp-studio-testimonial-shape">
-                  <Image src={shape} alt="shape" style={{height:"auto"}} />
+                  <img src={shape} alt="shape" style={{ height: "auto" }} />
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2 col-md-3">
@@ -82,7 +80,7 @@ export default function StudioPanelFour({style_2=false}: IProps) {
                       modules={[Navigation]}
                       className="swiper-container tp-studio-testimonial-active fix"
                     >
-                      {testimonial_data.map((item, i) => (
+                      {testimonial_data.map((item) => (
                         <SwiperSlide key={item.id}>
                           <div className="tp-studio-testimonial-item">
                             <div className="tp-studio-testimonial-text">
@@ -99,7 +97,7 @@ export default function StudioPanelFour({style_2=false}: IProps) {
                                 <span></span>
                               </div>
                               <div className="tp-studio-testimonial-logo">
-                                <Image src={item.logo} alt="logo" />
+                                <img src={item.logo} alt="logo" />
                               </div>
                             </div>
                           </div>

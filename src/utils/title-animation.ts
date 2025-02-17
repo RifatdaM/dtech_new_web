@@ -1,4 +1,4 @@
-import { gsap, Power2 } from "gsap";
+import { gsap } from "gsap";
 import $ from "jquery";
 // @ts-ignore
 import { SplitText } from "../plugins";
@@ -128,7 +128,8 @@ function fadeAnimation() {
   if ($(".tp_fade_bottom").length > 0) {
     gsap.set(".tp_fade_bottom", { y: 100, opacity: 0 });
     const fadeArray = gsap.utils.toArray(".tp_fade_bottom");
-    fadeArray.forEach((item: any, i) => {
+    // @ts-ignore
+    fadeArray.forEach((item: any, i:any) => {
       let fadeTl = gsap.timeline({
         scrollTrigger: {
           trigger: item,
@@ -147,7 +148,8 @@ function fadeAnimation() {
   if ($(".tp_fade_top").length > 0) {
     gsap.set(".tp_fade_top", { y: -100, opacity: 0 });
     const fadetopArray = gsap.utils.toArray(".tp_fade_top");
-    fadetopArray.forEach((item: any, i) => {
+    // @ts-ignore
+    fadetopArray.forEach((item: any, i:any) => {
       let fadeTl = gsap.timeline({
         scrollTrigger: {
           trigger: item,
@@ -166,6 +168,7 @@ function fadeAnimation() {
   if ($(".tp_fade_left").length > 0) {
     gsap.set(".tp_fade_left", { x: -100, opacity: 0 });
     const fadeleftArray = gsap.utils.toArray(".tp_fade_left");
+    // @ts-ignore
     fadeleftArray.forEach((item: any, i) => {
       let fadeTl = gsap.timeline({
         scrollTrigger: {
@@ -185,6 +188,7 @@ function fadeAnimation() {
   if ($(".tp_fade_right").length > 0) {
     gsap.set(".tp_fade_right", { x: 100, opacity: 0 });
     const faderightArray = gsap.utils.toArray(".tp_fade_right");
+    // @ts-ignore
     faderightArray.forEach((item: any, i) => {
       let fadeTl = gsap.timeline({
         scrollTrigger: {
@@ -202,6 +206,7 @@ function fadeAnimation() {
   }
   if ($(".tp_fade_anim").length > 0) {
     const fadeArrayup = gsap.utils.toArray(".tp_fade_anim");
+    // @ts-ignore
     fadeArrayup.forEach((t: any, e) => {
       let r = "bottom",
         a = 1,

@@ -1,7 +1,5 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-// images
+import { Link } from 'react-router-dom';
+// imgs
 import shape from '@/assets/img/home-08/hero/shape-1.png';
 import port_1 from "@/assets/img/home-12/portfolio/port-1.jpg";
 import port_2 from "@/assets/img/home-12/portfolio/port-2.jpg";
@@ -48,7 +46,7 @@ export default function StudioPanelThree() {
     <div className="panel-2 tp-studio-height">
       <div className="tp-studio-portfolio-area d-flex align-items-end tp-studio-height tp-studio-plr p-relative fix pt-100 pb-60">
         <div className="tp-studio-portfolio-shape d-none d-md-block">
-          <Image src={shape} alt="shape" style={{height:"auto"}} />
+          <img src={shape} alt="shape" style={{height:"auto"}} />
         </div>
         <div className="container container-1630">
           <div className="row align-items-end counter-row">
@@ -63,7 +61,7 @@ export default function StudioPanelThree() {
                 </p>
                 <Link
                   className="tp-btn-black-sm"
-                  href="#"
+                  to="#"
                 >
                   View More
                 </Link>
@@ -79,12 +77,12 @@ export default function StudioPanelThree() {
                     >
                       <div className="tp-studio-portfolio-inner-title-box">
                         <h4 className="tp-studio-portfolio-inner-title">
-                          <Link href="#">{item.title}</Link>
+                          <Link to="#">{item.title}</Link>
                           <span>{item.id < 9 ? `0${item.id}` : item.id}</span>
                         </h4>
                       </div>
                       <div className="tp-studio-portfolio-img">
-                        <Image
+                        <img
                           src={item.img}
                           alt="portfolio-img"
                         />

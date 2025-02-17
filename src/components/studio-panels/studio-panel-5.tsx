@@ -1,6 +1,5 @@
-import React from "react";
 import { NextArrowTwo } from "../svg";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default function StudioPanelFive() {
   return (
@@ -23,14 +22,14 @@ export default function StudioPanelFive() {
               <div className="tp-studio-cta-btn-box mb-45 d-flex justify-content-center">
                 <Link
                   className="tp-btn-black-animated p-relative d-inline-flex align-items-center d-none d-md-flex"
-                  href="#"
+                  to="#"
                 >
                   <span className="btn-expand"></span>
                   <span className="btn-1">Keep</span>
                   <span className="btn-2">In</span>
                   <span className="btn-3">Touch</span>
                 </Link>
-                <Link className="tp-btn-black d-md-none" href="#">
+                <Link className="tp-btn-black d-md-none" to="#">
                   Keep In Touch
                 </Link>
               </div>

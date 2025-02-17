@@ -1,4 +1,4 @@
-import { IMenuDT } from "@/types/menu-d-t";
+import { IMenuDT } from "../types/menu";
 
 
 const menu_data: IMenuDT[] = [

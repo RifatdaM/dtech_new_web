@@ -1,4 +1,3 @@
-import React from 'react';
 import CounterItem from './counter-item';
 
 // images 

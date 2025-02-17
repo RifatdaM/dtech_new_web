@@ -119,6 +119,7 @@ function studioPanel() {
           pinSpacing: true,
           start: "top 0",
           scrub: 1,
+          // @ts-ignore
           end: (st) => "+=" + totalPanelsWidth,
         }
       });

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/dtech/logo.svg";
 import logo_2 from "../../assets/img/dtech/logo.svg";

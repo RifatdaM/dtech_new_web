@@ -1,8 +1,9 @@
-import React, { CSSProperties } from "react";
+import  { CSSProperties } from "react";
 
 import { Link } from "react-router-dom";
 import menu_data from "../../data/menu-data";
 
+// @ts-ignore
 const imgStyle: CSSProperties = { width: "100%", height: "auto", objectFit: "cover" };
 const HeaderMenus = () => {
 

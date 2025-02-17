@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/dtech/logo.svg';
 import { RightArrow, SvgBgSm } from '../../components/svg';
@@ -33,7 +33,7 @@ export default function FooterFour() {
                         <RightArrow clr='#19191A' />
                       </span>
                       <span className="icon-2">
-                        <SvgBgSm/>
+                        <SvgBgSm />
                       </span>
                     </button>
                   </div>
@@ -63,8 +63,8 @@ export default function FooterFour() {
                   <div className="tp-footer-2-contact-item">
                     <span>
                       <a href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</a>
-                      </span>
+                        target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</a>
+                    </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
                     <span>P: <a href="tel:+725214456">+ 725 214 456</a></span>

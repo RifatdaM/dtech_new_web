@@ -6,6 +6,7 @@ import { ScrollSmoother } from '../plugins';
 import { useGSAP } from "@gsap/react";
 
 export default function useScrollSmooth() {
+  // @ts-ignore
   const [isScrollSmooth, setIsScrollSmooth] = useState<boolean>(true);
   useGSAP(() => {
     const smoothWrapper = document.getElementById("smooth-wrapper");

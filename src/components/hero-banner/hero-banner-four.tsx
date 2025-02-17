@@ -1,5 +1,3 @@
-'use client';
-import React from "react";
 import { ArrowBg, RightArrowTwo } from "../svg";
 import { Link } from "react-router-dom";
 

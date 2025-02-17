@@ -5,7 +5,9 @@ export function useIsotop() {
   const isotopContainer = useRef<HTMLDivElement>(null);
 
   const initIsotop = async () => {
+    // @ts-ignore
     const Isotope = (await import("isotope-layout")).default;
+      // @ts-ignore
     const imagesLoaded = (await import("imagesloaded")).default;
 
     if (!isotopContainer.current) return;

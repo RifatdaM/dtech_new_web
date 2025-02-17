@@ -1,6 +1,6 @@
-import $ from 'jquery';
 import { gsap } from 'gsap';
-import { SplitText,chroma } from '@/plugins';
+// @ts-ignore
+import { SplitText, chroma } from '../plugins';
 
 function footerOneAnimation() {
 	if (typeof window !== 'undefined') {
@@ -14,20 +14,20 @@ function footerOneAnimation() {
 					"</span></div>")
 			);
 
-			setTimeout(() => {
-				const menuText = document.querySelectorAll<HTMLSpanElement>(".tp-menu-text span");
-				menuText.forEach((item) => {
-						const fontSizes = window.getComputedStyle(item, null);
-						let fontSize = fontSizes.getPropertyValue("font-size");
-						let sizeInNumber = parseInt(fontSize.replace("px", ""));
-						let newSize = String(sizeInNumber / 3);
-						newSize = newSize + "px"; // Corrected to string conversion
-						if (item.innerHTML === " ") {
-								item.style.width = newSize;
-						}
-				});
+		setTimeout(() => {
+			const menuText = document.querySelectorAll<HTMLSpanElement>(".tp-menu-text span");
+			menuText.forEach((item) => {
+				const fontSizes = window.getComputedStyle(item, null);
+				let fontSize = fontSizes.getPropertyValue("font-size");
+				let sizeInNumber = parseInt(fontSize.replace("px", ""));
+				let newSize = String(sizeInNumber / 3);
+				newSize = newSize + "px"; // Corrected to string conversion
+				if (item.innerHTML === " ") {
+					item.style.width = newSize;
+				}
+			});
 		}, 1000);
-		
+
 	}
 
 };
@@ -56,7 +56,7 @@ function footerTwoAnimation() {
 				once: true
 			}
 		});
-	
+
 		let mySplitText = new SplitText(".footer-big-text", { type: "words,chars" });
 		let chars = mySplitText.chars;
 		let endGradient = (chroma as any).scale(['#FFF', '#FFF', '#FFF', '#FFF', '#FFF']);
@@ -80,6 +80,7 @@ function footerTwoAnimation() {
 			duration: 1.5
 		}, 0.5);
 		cta.to(chars, {
+			// @ts-ignore
 			color: (i, el, arr) => {
 				return endGradient(i / arr.length).hex();
 			},

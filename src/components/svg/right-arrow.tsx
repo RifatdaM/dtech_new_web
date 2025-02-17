@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function RightArrow({clr='#F3F3F4'}:{clr?: string}) {
   return (

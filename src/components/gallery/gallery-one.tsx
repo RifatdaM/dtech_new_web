@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import { CSSProperties } from 'react';
 
 import Marquee from 'react-fast-marquee';
 // imgs
@@ -17,7 +17,7 @@ const gallery_imgs = [
   g_1, g_2, g_3, g_4, g_5, g_3, g_1, g_2, g_3, g_4, g_5, g_3
 ]
 
-const imgStyle:CSSProperties = {height: "auto"};
+const imgStyle: CSSProperties = { height: "auto" };
 
 export default function GalleryOne() {
   return (

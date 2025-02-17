@@ -51,6 +51,7 @@ function ctaAnimation() {
 			duration: 1.5
 		}, 0.5);
 		cta.to(chars, {
+			// @ts-ignore
 			color: (i, el, arr) => {
 				return endGradient(i / arr.length).hex();
 			},
