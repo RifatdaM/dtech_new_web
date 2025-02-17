@@ -41,6 +41,7 @@ function hoverBtn() {
       gsap.to(target, 1, {
         x: ((relX - $this.width() / 2) / $this.width()) * movement,
         y: ((relY - $this.height() / 2) / $this.height()) * movement,
+        // @ts-ignore
         ease: Power2.easeOut,
       });
     }
