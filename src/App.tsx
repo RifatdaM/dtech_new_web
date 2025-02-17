@@ -15,8 +15,8 @@ function App() {
         <HelmetProvider>
 
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home2" element={<Home2 />} />
+            <Route path="/" element={<Home2 />} />
+            <Route path="/home2" element={<Home />} />
             {/* <Route path="/" element={<Loading />} /> */}
           </Routes>
         </HelmetProvider>
