@@ -1,9 +1,10 @@
-"use client";
 import { gsap } from "gsap";
 import { useState } from "react";
 // @ts-ignore
-import { ScrollSmoother } from '../plugins';
+// import { ScrollSmoother } from '../plugins';
 import { useGSAP } from "@gsap/react";
+// gsap.registerPlugin(useGSAP,  ScrollSmoother)
+
 
 export default function useScrollSmooth() {
   // @ts-ignore
@@ -18,13 +19,13 @@ export default function useScrollSmooth() {
         nullTargetWarn: false,
       });
 
-      ScrollSmoother.create({
-        smooth: 2,
-        effects: true,
-        smoothTouch: 0.1,
-        normalizeScroll: false,
-        ignoreMobileResize: true,
-      });
+      // ScrollSmoother.create({
+      //   smooth: 2,
+      //   effects: true,
+      //   smoothTouch: 0.1,
+      //   normalizeScroll: false,
+      //   ignoreMobileResize: true,
+      // });
     }
   });
 }
