@@ -1,4 +1,9 @@
-@use "bootstrap/scss/bootstrap";
+@use "sass:color";
+@use "sass:math";
+@use "bootstrap" as *;
+
+// Your other styles...
+// @use "bootstrap/scss/bootstrap";
 @use "react-modal-video/scss/modal-video.scss";
-@use "swiper/css/bundle"; 
-@use '../src/assets/scss/main.scss';
+@use "swiper/css/bundle";
+@use "../src/assets/scss/main.scss";
