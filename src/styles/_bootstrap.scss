@@ -1,0 +1,7 @@
+// Custom Bootstrap configuration
+$enable-deprecation-messages: false;
+$enable-negative-margins: true;
+$enable-important-utilities: true;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";

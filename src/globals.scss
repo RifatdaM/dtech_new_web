@@ -1,9 +1,10 @@
 @use "sass:color";
 @use "sass:math";
-@use "bootstrap" as *;
-
-// Your other styles...
-// @use "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap" with (
+  $enable-deprecation-messages: false
+);
 @use "react-modal-video/scss/modal-video.scss";
 @use "swiper/css/bundle";
 @use "../src/assets/scss/main.scss";
+
+// Any other styles or imports that don't use @use can go here
